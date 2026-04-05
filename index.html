@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>🎂 Happy Birthday Alisha Paneru 🎂</title>
+</head>
+
+<body>
+    <!-- INTRO SCREEN -->
+    <div class="intro-screen" id="introScreen">
+        <h1>✨ A Special Surprise Awaits ✨</h1>
+        <p>Someone very special has a birthday today...</p>
+        <button class="open-btn" onclick="openSurprise()">🎁 Open Your Surprise 🎁</button>
+    </div>
+    <!-- CONFETTI -->
+    <div class="confetti-container" id="confetti"></div>
+    <!-- FLOATING HEARTS -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <!-- PARTICLES -->
+    <div class="particles" id="particles"></div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-emoji">🎂</div>
+            <h1>Happy Birthday</h1>
+            <h2>Dear Alisha Paneru 💖</h2>
+            <div class="date-badge">📅 April 5, 1998 ✨ Born on this beautiful day</div>
+            <p class="tagline">
+                Some people come into your life and leave a mark that never fades.
+                You are one of those beautiful souls, Alisha. Today, the world celebrates the day you were born. 🌸
+            </p>
+        </div>
+        <div class="scroll-indicator"
+            onclick="document.getElementById('countdown').scrollIntoView({behavior:'smooth'})">
+            <span></span>
+        </div>
+    </section>
+    <!-- COUNTDOWN SECTION -->
+    <section class="countdown-section" id="countdown">
+        <h2 class="section-title">⏳ Birthday Countdown</h2>
+        <p class="section-subtitle">Counting every moment until your special day</p>
+        <!-- Countdown Display -->
+        <div class="countdown-wrapper" id="countdownWrapper">
+            <div class="countdown-display">
+                <div class="countdown-box">
+                    <span class="number" id="years">0</span>
+                    <span class="label">Years</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="months">0</span>
+                    <span class="label">Months</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="days">0</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="hours">0</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="minutes">0</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="number" id="seconds">0</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <!-- Birthday Today Message -->
+        <div class="birthday-today-message" id="birthdayToday">
+            <div class="big-emoji">🎉</div>
+            <h2>Happy Birthday, Alisha!</h2>
+            <p>Today is YOUR day! The stars aligned 28 years ago to create the most beautiful soul. May this year bring
+                you everything your heart desires and more.</p>
+            <div class="age-badge" id="ageBadge">🎂 28 Years Beautiful 🎂</div>
+        </div>
+    </section>
+    <!-- EMOTIONAL MESSAGES -->
+    <section class="emotional-section" id="messages">
+        <div style="text-align:center;">
+            <h2 class="section-title">💝 From The Heart</h2>
+            <p class="section-subtitle">Words that only you deserve to hear</p>
+        </div>
+        <div class="message-cards">
+            <div class="message-card" data-animate>
+                <div class="card-emoji">🌹</div>
+                <h3>To The Most Beautiful Soul</h3>
+                <p>Alisha, your name means "protected by God" and truly, you have been a blessing to everyone who has
+                    had the privilege of knowing you. Your smile can light up the darkest rooms, and your kindness has
+                    touched more hearts than you'll ever know. On this special day, I want you to know that you are
+                    cherished beyond words.</p>
+            </div>
+            <div class="message-card" data-animate>
+                <div class="card-emoji">💫</div>
+                <h3>About Those Memories</h3>
+                <p>Some chapters in life are meant to be short but unforgettable. Our story together was one of those
+                    chapters — beautiful, real, and something I'll carry in my heart forever. Even though our paths went
+                    different ways, I'll always be grateful for every moment, every laugh, every conversation that made
+                    my world brighter. You taught me what it means to truly care.</p>
+            </div>
+            <div class="message-card" data-animate>
+                <div class="card-emoji">🦋</div>
+                <h3>My Birthday Wish For You</h3>
+                <p>I wish you a life filled with the kind of happiness you so freely give to others. May every dream
+                    you've been holding onto finally take flight. May you find love that is patient, kind, and
+                    unwavering. May you never doubt your worth, because you are truly one in a million, Alisha Paneru.
+                    The world is better because you're in it.</p>
+            </div>
+            <div class="message-card" data-animate>
+                <div class="card-emoji">🌙</div>
+                <h3>A Promise From Afar</h3>
+                <p>I may not be the one standing beside you today, but please know that somewhere, someone is genuinely
+                    happy that you were born. Someone who still remembers the way you laugh, the way you make ordinary
+                    moments extraordinary. I promise to always wish you the best, today and every day. Happy Birthday,
+                    beautiful soul. 🌸</p>
+            </div>
+        </div>
+    </section>
+    <!-- LETTER SECTION -->
+    <section class="letter-section" id="letter">
+        <div class="letter-container">
+            <h2>💌 A Letter For You</h2>
+            <div class="letter-text">
+                <p>Dear Alisha,</p>
+                <p>As I sit down to write this, a thousand memories come flooding back — each one more precious than the
+                    last. I want you to know that writing this isn't about looking back with regret, but about looking
+                    forward with gratitude. Gratitude that you existed in my life, even if just for a season.</p>
+                <p>You turned 28 today, and if there's one thing I know for certain, it's that you deserve every single
+                    beautiful thing this universe has to offer. Your strength inspires me, your gentleness amazes me,
+                    and your spirit — your spirit is something truly rare.</p>
+                <p>I know life hasn't always been easy. I know there have been tears and sleepless nights and moments
+                    when you wondered if anyone truly understood you. But today, I want you to hear this clearly:
+                    <strong style="color: var(--pink);">You are enough. You always have been. You always will
+                        be.</strong>
+                </p>
+                <p>May this new year of your life bring you closer to every dream you've been chasing. May you find
+                    people who love you as deeply as you love others. And may you never forget how truly special you are
+                    — not just today, but every single day.</p>
+                <p>With all my heart, always.</p>
+            </div>
+            <div class="letter-signature">
+                — Someone Who Still Cares 💕
+            </div>
+        </div>
+    </section>
+    <!-- POEM SECTION -->
+    <section class="poem-section" id="poem">
+        <h2 class="section-title">📝 A Poem For Alisha</h2>
+        <p class="section-subtitle" style="margin-bottom: 40px;">Written with love, on your special day</p>
+        <div class="poem-container">
+            <div class="poem-text">
+                On the Sixth of April 2026, the stars aligned,<br>
+                To bring a soul so rare and so refined.<br>
+                Alisha Paneru — a name so sweet,<br>
+                Like springtime flowers, forever neat.<br><br>
+                Though chapters change and seasons turn,<br>
+                The light you carry will always burn.<br>
+                In every laugh, in every tear,<br>
+                You've made this world a place of cheer.<br><br>
+                So blow the candles, make a wish so true,<br>
+                The universe is celebrating you.<br>
+                Happy Birthday, dear, may your heart take flight,<br>
+                You are my beautiful, fading light. 🌟
+            </div>
+        </div>
+    </section>
+    <!-- BIRTHDAY WISHES -->
+    <section class="wishes-section" id="wishes">
+        <h2 class="section-title">🎁 Birthday Wishes</h2>
+        <p class="section-subtitle">Everything I wish for you today and always</p>
+        <div class="wishes-grid">
+            <div class="wish-card" data-animate>
+                <div class="wish-emoji">💖</div>
+                <h4>Endless Love</h4>
+                <p>May you find a love that makes you feel safe, cherished, and adored every single day of your life.
+                </p>
+            </div>
+            <div class="wish-card" data-animate>
+                <div class="wish-emoji">✨</div>
+                <h4>Dreams Come True</h4>
+                <p>May every dream you've whispered to the stars finally come to life. You deserve it all and more.</p>
+            </div>
+            <div class="wish-card" data-animate>
+                <div class="wish-emoji">🌈</div>
+                <h4>Happiness</h4>
+                <p>May your days be filled with joy so pure that it spills over into the lives of everyone around you.
+                </p>
+            </div>
+            <div class="wish-card" data-animate>
+                <div class="wish-emoji">🌸</div>
+                <h4>Good Health</h4>
+                <p>May your body be strong, your mind be peaceful, and your spirit be forever young and vibrant.</p>
+            </div>
+            <div class="wish-card" data-animate>
+                <div class="wish-emoji">🌟</div>
+                <h4>Success</h4>
+                <p>May you reach heights you've only dreamed of, and may your journey be as beautiful as the
+                    destination.</p>
+            </div>
+            <div class="wish-card" data-animate>
+                <div class="wish-emoji">🕊️</div>
+                <h4>Inner Peace</h4>
+                <p>May you find peace in the quiet moments, strength in the difficult ones, and gratitude in every
+                    single one.</p>
+            </div>
+        </div>
+    </section>
+    <!-- CAKE SECTION -->
+    <section class="cake-section" id="cake">
+        <h2 class="section-title">🎂 Make a Wish!</h2>
+        <p class="section-subtitle">Close your eyes and blow the candles</p>
+        <div class="cake-container">
+            <div class="cake">
+                <div class="candle-row">
+                    <div class="candle">
+                        <div class="flame" id="flame1"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame" id="flame2"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame" id="flame3"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame" id="flame4"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="flame" id="flame5"></div>
+                    </div>
+                </div>
+                <div class="cake-layer cake-top">
+                    <div class="drip" style="left: 20px;"></div>
+                    <div class="drip" style="left: 60px;"></div>
+                    <div class="drip" style="right: 40px;"></div>
+                </div>
+                <div class="cake-layer cake-middle"></div>
+                <div class="cake-layer cake-bottom"></div>
+                <div class="cake-plate"></div>
+            </div>
+        </div>
+        <p style="color: rgba(255,255,255,0.5); margin-top: 20px; font-size: 0.9rem;">
+            🎂 <em>Click the cake to blow out the candles!</em> 🎂
+        </p>
+        <button onclick="blowCandles()"
+            style="margin-top: 15px; padding: 12px 35px; background: linear-gradient(135deg, var(--pink), var(--purple)); color: white; border: none; border-radius: 50px; cursor: pointer; font-family: 'Poppins', sans-serif; font-size: 1rem; transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            🎈 Blow the Candles 🎈
+        </button>
+        <p id="blowMessage"
+            style="display:none; color: var(--gold); font-family: 'Dancing Script', cursive; font-size: 1.8rem; margin-top: 25px; animation: fadeInUp 1s ease;">
+            ✨ May all your wishes come true, Alisha! ✨
+        </p>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="hearts">💖🎂💖</div>
+        <p style="margin-top: 15px;">Made with love & memories 💕</p>
+        <p>Happy Birthday, <strong style="color: var(--pink);">Alisha Paneru</strong> — April 5, 1998</p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">Some people are meant to stay in your heart, not in your life.
+            🌙</p>
+    </footer>
+    <!-- MUSIC TOGGLE -->
+    <button class="music-toggle" id="musicBtn" onclick="toggleMusic()" title="Toggle Music">
+        🎵
+    </button>
+</body>
+<script src="script.js"></script>
+
+</html>
